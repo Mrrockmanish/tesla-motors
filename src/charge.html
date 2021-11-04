@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+//= templates/head.html
+<body class="relative">
+//= templates/modal-form.html
+//= templates/mobile-nav.html
+//= templates/header.html
+<div class="overflow-hidden">
+    <div class="container">
+        //= templates/breadcrumb.html
+        <h1>
+            Зарядка
+        </h1>
+        <div class="flex -mx-4">
+            <div class="w-full lg:w-1/2 lg:w-10/12 xl:w-6/12 xxl:w-7/12 px-4">
+                <div style="max-width: 48rem">
+                    Мы готовы предоставить Вам полный спектр услуг, чтобы ничто не повлияло на эмоции от владения этим по-настоящему уникальным автомобилем
+                </div>
+                <div class="w-full pt-8 px-4 xl:px-6 pb-10 mt-10" style="border: 1px solid #787878; border-radius: 2rem;">
+                    <div class="text-center font-medium text-2xl">
+                        Заявка на установку зарядной станции
+                    </div>
+                    <div class="mx-auto" style="max-width: 43rem">
+                        <form class="flex flex-wrap -mx-2 xxl:-mx-4 mt-6">
+                            <div class="w-full md:w-1/2 px-2 xxl:px-4 mt-4">
+                                <div class="custom-select relative">
+                                    <select name="where" class="appearance-none text-30 bg-F1 border-radius-30 text-base h-14 w-full pl-8 pr-6">
+                                        <option class="text-8A" value="Модель" disabled selected>Где нужно установить</option>
+                                        <option value="Модель 1">Модель 1</option>
+                                        <option value="Модель 2">Модель 2</option>
+                                        <option value="Модель 3">Модель 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 px-2 xxl:px-4 mt-4">
+                                <input type="text" name="address" class="text-30 bg-F1 border-radius-30 text-base h-14 w-full pl-8 pr-6" placeholder="Адрес установки">
+                            </div>
+                            <div class="w-full md:w-1/2 px-2 xxl:px-4 mt-4">
+                                <div class="custom-select relative">
+                                    <select name="faze" class="appearance-none text-30 bg-F1 border-radius-30 text-base h-14 w-full pl-8 pr-6">
+                                        <option class="text-8A" value="Количество фаз" disabled selected>Количество фаз</option>
+                                        <option value="Модель 1">Модель 1</option>
+                                        <option value="Модель 2">Модель 2</option>
+                                        <option value="Модель 3">Модель 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-1/2 px-2 xxl:px-4 mt-4">
+                                <input type="text" name="power" class="text-30 bg-F1 border-radius-30 text-base h-14 w-full pl-8 pr-6" placeholder="Подведенная мощность в кВт">
+                            </div>
+                            <label class="w-full flex items-start md:w-1/2 px-2 xxl:px-4 mt-4 cursor-pointer">
+                                <span class="flex-shrink-0 cursor-pointer mt-1">
+                                    <input type="checkbox" name="commercial" checked class="commercial hidden">
+                                    <span class="commercial__custom relative flex items-center justify-center bg-EC w-4 h-4 rounded-sm mr-4"></span>
+                                </span>
+                                <span class="text-85 text-base">
+                                    Мне нужна коммерческая зарядкая станция с&nbsp;биллингом (с&nbsp;оплатой) и&nbsp;у&nbsp;меня есть свободная мощность
+                                </span>
+                            </label>
+                            <div class="w-full md:w-1/2 px-2 xxl:px-4 mt-4">
+                                <input type="tel" name="tel" class="text-30 bg-F1 border-radius-30 text-base h-14 w-full pl-8 pr-6" placeholder="Ваш номер телефона">
+                            </div>
+                            <div class="w-full flex justify-center px-4 mt-4 md:mt-10">
+                                <button type="submit" class="w-full md-max-17">
+                                    <span class="more text-30 font-medium flex items-center justify-center bg-35 text-white border-radius-30 text-base h-14 w-full cursor-pointer">
+                                        <span class="mr-2 whitespace-nowrap">
+                                            Записаться
+                                        </span>
+                                        <span class="more__arrow">
+                                            <svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M35.3536 4.35355C35.5488 4.15829 35.5488 3.84171 35.3536 3.64644L32.1716 0.464463C31.9763 0.269201 31.6597 0.269201 31.4645 0.464463C31.2692 0.659726 31.2692 0.976308 31.4645 1.17157L34.2929 4L31.4645 6.82842C31.2692 7.02369 31.2692 7.34027 31.4645 7.53553C31.6597 7.73079 31.9763 7.73079 32.1716 7.53553L35.3536 4.35355ZM4.37114e-08 4.5L35 4.5L35 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+                                                      fill="currentColor"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="w-full flex justify-center px-4 mt-6">
+                                <label class="cursor-pointer">
+                                    <input type="checkbox" name="agree" checked class="agree hidden">
+                                    <span class="agree__custom flex items-center justify-center bg-EC w-4 h-4 rounded-full  mr-3"></span>
+                                </label>
+                                <div class="text-85 text-xs">
+                                    Согласен с условиями обработки пресональных данных <a href="politika" class="underline">(ознакомиться)</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden xl:block lg:w-1/2 xl:w-6/12 xxl:w-5/12">
+                <div class="relative">
+                    <img src="img/examples/tesla-model-1.png" class="tesla-model-img absolute left-0 top-0" alt="">
+                </div>
+            </div>
+        </div>
+        <h2 class="mt-16 mb-4 md:mt-24">
+            Что важно знать
+        </h2>
+        <div style="max-width: 80.5rem">
+            <p>
+                Согласно правилам эксплуатации данных авто нельзя допускать уменьшения заряда АКБ ниже 10%, а при зарядке превышать 90%. Это позволит сохранить работоспособность аккумуляторной батареи на максимально длительный срок. Восполнить электрический заряд батареи можно на специализированных электрозаправках, где установлено соответствующее оборудование.
+            </p>
+            <p>
+                Владельцам электрокаров TESLA не стоит забывать о том, что подзарядка главной (тяговой) батареи может осуществляться не только с помощью сетей электрозаправочных станций, но и с помощью домашних зарядок, которые предлагают компании-производители. Главное различие между ними заключается в размерах, технических характеристиках, времени пополнения заряда батареи и стоимости самого устройства. Широкой популярностью пользуются зарядные станции для публичного использования. Их устанавливают на паркингах, вблизи крупных офисных и торговых центров, а также других общественных объектов.
+            </p>
+            <p>
+                Чтобы подобрать и купить зарядную станцию для электромобилей, которая отвечает вашим потребностям, заполните форму обратной связи на нашем сайте
+            </p>
+        </div>
+        <div class="tesla-gallery flex flex-wrap -mx-2 lg:-mx-4 mt-2">
+            <div class="tesla-gallery__item px-2 lg:px-4 w-full sm:w-1/2 lg:w-1/3 mt-6">
+                <a href="img/examples/charge-1.jpg">
+                    <img src="img/examples/charge-1.jpg" alt="">
+                </a>
+            </div>
+            <div class="tesla-gallery__item px-2 lg:px-4 w-full sm:w-1/2 lg:w-1/3 mt-6">
+                <a href="img/examples/charge-2.jpg">
+                    <img src="img/examples/charge-2.jpg" alt="">
+                </a>
+            </div>
+            <div class="tesla-gallery__item px-2 lg:px-4 w-full sm:w-1/2 lg:w-1/3 mt-6">
+                <a href="img/examples/charge-3.jpg">
+                    <img src="img/examples/charge-3.jpg" alt="">
+                </a>
+            </div>
+            <div class="tesla-gallery__item px-2 lg:px-4 w-full sm:w-1/2 lg:w-1/3 mt-6">
+                <a href="img/examples/charge-4.jpg">
+                    <img src="img/examples/charge-4.jpg" alt="">
+                </a>
+            </div>
+            <div class="tesla-gallery__item px-2 lg:px-4 w-full sm:w-1/2 lg:w-1/3 mt-6">
+                <a href="img/examples/charge-5.jpg">
+                    <img src="img/examples/charge-5.jpg" alt="">
+                </a>
+            </div>
+            <div class="tesla-gallery__item px-2 lg:px-4 w-full sm:w-1/2 lg:w-1/3 mt-6">
+                <a href="img/examples/charge-6.jpg">
+                    <img src="img/examples/charge-6.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+//= templates/footer.html
+//= templates/scripts.html
+</body>
+</html>

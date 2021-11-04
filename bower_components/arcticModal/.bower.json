@@ -1,0 +1,14 @@
+{
+  "name": "arcticModal",
+  "homepage": "https://github.com/vjik/arcticModal",
+  "_release": "cc46797fd1",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "cc46797fd14ae6163763b56c320bff4c3685a344"
+  },
+  "_source": "https://github.com/vjik/arcticModal.git",
+  "_target": "*",
+  "_originalSource": "vjik/arcticModal",
+  "_direct": true
+}

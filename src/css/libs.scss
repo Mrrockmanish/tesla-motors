@@ -1,0 +1,38 @@
+@import '../../node_modules/magnific-popup/dist/magnific-popup';
+@import '../../bower_components/arcticModal/arcticmodal/jquery.arcticmodal';
+
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+
+$root-font-size: 16;
+
+@function s($size) {
+  @return $size / $root-font-size * 1rem;
+}
+
+.slick-dots li {
+  width: s(30);
+  
+  @media (min-width: 992px) {
+    width: s(58)
+  }
+}
+
+.slick-dots li button:before {
+  width: 100%;
+  height: s(8);
+  display: block;
+  content: '';
+  background-color: #A0A0A0;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  background-color: #ECECEC;
+}
+
+.slick-dots {
+  bottom: - s(55);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+//= templates/head.html
+<body class="relative">
+//= templates/modal-form.html
+//= templates/mobile-nav.html
+//= templates/header.html
+<div class="overflow-hidden">
+    <div class="container">
+        //= templates/breadcrumb.html
+        <h1>
+            Контакты
+        </h1>
+        <div style="max-width: 48rem">
+            Мы готовы предоставить Вам полный спектр услуг, чтобы ничто не повлияло на эмоции от владения этим по-настоящему уникальным автомобилем
+        </div>
+        <div class="flex flex-wrap -mx-4 mt-8 lg:mt-12">
+            <div class="map-container w-full lg:w-7/12 xl:w-8/12 px-4">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A12a8a3d862fa6767fccda04d569e9fb36fb72d09abbc53e78c2b87a38d301086&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+            </div>
+            <div class="w-full sm:w-7/12 lg:w-5/12 xl:w-4/12 xxl:w-3/12 mt-10 lg:mt-0 px-4">
+                <div class="font-medium text-2xl">
+                    Мы всегда на связи
+                </div>
+                <div class="flex items-center mt-4">
+                    <img src="img/elements/phone.svg" class="flex-shrink-0 mr-5" alt="">
+                    <div>
+                        <a href="tel:+78000000000">8 800 000 00 00</a>
+                    </div>
+                </div>
+                <div class="flex items-center mt-4">
+                    <img src="img/elements/map-marker.svg" class="flex-shrink-0 mr-5" alt="">
+                    <div>
+                        <div>Красная №1</div>
+                    </div>
+                </div>
+                <div class="text-base font-medium mt-6">
+                    Записаться на сервис
+                </div>
+                <form>
+                    <div class="mt-4">
+                        <input type="tel" name="tel" class="text-30 bg-F1 border-radius-30 text-base h-14 w-full pl-8" placeholder="Ваш номер телефона">
+                    </div>
+                    <div class="mt-4">
+                        <input type="text" name="time" class="text-30 bg-F1 border-radius-30 text-base h-14 w-full pl-8" placeholder="На какое время записать">
+                    </div>
+                    <div class="mt-4">
+                        <textarea type="comment" name="comment" class="text-30 bg-F1 border-radius-18 text-base w-full h-32 pl-8 py-4" placeholder="Поле для вопроса"></textarea>
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" class="w-full">
+                            <span class="more text-30 font-medium flex items-center justify-center bg-35 text-white border-radius-30 text-base h-14 w-full cursor-pointer">
+                                <span class="mr-2 whitespace-nowrap">
+                                    Записаться
+                                </span>
+                                <span class="more__arrow">
+                                    <svg width="36" height="8" viewBox="0 0 36 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M35.3536 4.35355C35.5488 4.15829 35.5488 3.84171 35.3536 3.64644L32.1716 0.464463C31.9763 0.269201 31.6597 0.269201 31.4645 0.464463C31.2692 0.659726 31.2692 0.976308 31.4645 1.17157L34.2929 4L31.4645 6.82842C31.2692 7.02369 31.2692 7.34027 31.4645 7.53553C31.6597 7.73079 31.9763 7.73079 32.1716 7.53553L35.3536 4.35355ZM4.37114e-08 4.5L35 4.5L35 3.5L-4.37114e-08 3.5L4.37114e-08 4.5Z"
+                                              fill="currentColor"/>
+                                    </svg>
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+//= templates/footer.html
+//= templates/scripts.html
+</body>
+</html>

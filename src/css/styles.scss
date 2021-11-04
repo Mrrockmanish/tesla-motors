@@ -1,0 +1,328 @@
+@import '../../node_modules/tailwindcss/base';
+@import '../../node_modules/tailwindcss/components';
+
+
+@import 'fonts';
+
+
+$root-font-size: 16;
+
+@function s($size) {
+    @return $size / $root-font-size * 1rem;
+}
+
+html {
+    font-size: 88%;
+
+    @media (min-width: 375px) {
+        font-size: 100%;
+    }
+}
+
+
+body {
+    font-family: 'TT Norms';
+    color: #000000;
+    font-size: s(18);
+    font-weight: 400;
+    word-wrap: break-word;
+    line-height: 1.4;
+
+    padding-top: s(41);
+
+    @media (min-width: 576px) {
+        padding-top: s(50);
+        font-size: s(20);
+    }
+
+    @media (min-width: 992px) {
+        padding-top: 0;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.input, button, textarea, input, select {
+    outline: none!important;
+
+    &:hover {
+        outline: none!important;
+    }
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    transition: .3s;
+}
+
+
+section:not(.promo) {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.bars {
+    z-index: 99;
+}
+
+h1 {
+    font-weight: 500;
+    margin-bottom: s(8);
+    line-height: 1.5;
+    font-size: s(32);
+
+    @media (min-width: 576px) {
+        font-size: s(36);
+    }
+}
+
+h2 {
+    font-weight: 500;
+    margin-bottom: s(8);
+    line-height: 1.5;
+    font-size: s(24);
+
+    @media (min-width: 576px) {
+        font-size: s(32);
+    }
+}
+
+h3 {
+    font-weight: 500;
+    margin-bottom: s(8);
+    line-height: 1.5;
+    font-size: s(20);
+
+    @media (min-width: 576px) {
+        font-size: s(24);
+    }
+}
+
+.header {
+    &__logo {
+        max-width: s(50);
+
+        @media (min-width: 576px) {
+            max-width: s(70);
+        }
+
+        @media (min-width: 992px) {
+            max-width: s(100);
+        }
+
+        @media (min-width: 1200px) {
+            max-width: s(120);
+        }
+
+        @media (min-width: 1400px) {
+            max-width: s(140);
+        }
+    }
+}
+
+
+.offer {
+    &__blocks {
+        height: s(660);
+        @media (min-width: 576px) {
+            height: s(740);
+        }
+    }
+
+    &__bg {
+        background-image: url(../img/elements/main-car.png);
+        background-position: center 5rem;
+        background-repeat: no-repeat;
+        background-size: 140%;
+        
+        @media (min-width: 500px) {
+            background-position: center 3rem;
+        }
+
+        @media (min-width: 576px) {
+            background-position: center s(100);
+            background-size: 900px;
+        }
+
+        @media (min-width: 768px) {
+            background-position: center s(70);
+            background-size: 1100px;
+        }
+
+        @media (min-width: 992px) {
+            background-position: center s(130);
+            background-size: 1400px;
+        }
+
+        @media (min-width: 1200px) {
+            background-size: auto;
+            background-position: center s(56);
+        }
+    }
+
+    &__title {
+        line-height: 1.16;
+        font-size: s(24);
+
+        @media (min-width: 576px) {
+            font-size: s(32);
+        }
+
+        @media (min-width: 768px) {
+            font-size: s(42);
+        }
+
+        @media (min-width: 992px) {
+            font-size: s(32);
+        }
+
+        @media (min-width: 1200px) {
+            font-size: s(48);
+        }
+    }
+}
+
+.border-radius-18 {
+    border-radius: s(18);
+}
+
+.border-radius-30 {
+    border-radius: s(30);
+}
+
+.more {
+    &__arrow {
+        transform: translateX(0);
+        transition: .3s;
+    }
+
+    &:hover {
+        .more__arrow {
+            transform: translateX(s(8));
+        }
+    }
+}
+
+.agree:checked + .agree__custom {
+    &::before {
+        content: '';
+        display: block;
+        width: s(10);
+        height: s(10);
+        border-radius: 100%;
+        background-color: #D20C18;
+    }
+}
+
+.commercial:checked + .commercial__custom {
+    &::before {
+        content: url("../img/elements/check-commercial.svg");
+        display: block;
+        position: absolute;
+        top: - s(9);
+        right: - s(5)
+    }
+}
+
+.big-title {
+    font-weight: 700;
+    font-size: s(32);
+
+    @media (min-width: 768px) {
+        font-size: s(48);
+    }
+}
+
+.md-max-17 {
+    @media (min-width: 768px) {
+        max-width: s(277);
+    }
+}
+
+.lg-max-17 {
+    max-width: s(375);
+    @media (min-width: 992px) {
+        max-width: s(277);
+    }
+}
+
+.lg-max-17-no-375 {
+    @media (min-width: 992px) {
+        max-width: s(277);
+    }
+}
+
+
+.map-container {
+    
+    iframe {
+        height: s(350);
+
+        @media (min-width: 992px) {
+            height: s(536);
+        }
+    }
+}
+
+.breadcrumb {
+    li:not(:last-child) {
+        &::after {
+            content: "-";
+            display: inline-block;
+            margin: 0 s(4);
+        }
+    }
+}
+
+.custom-select {
+    z-index: 1;
+    &::before {
+        content: url("../img/elements/chevron-down.svg");
+        position: absolute;
+        display: block;
+        top: 50%;
+        right: s(24);
+        transform: translateY(-50%);
+    }
+}
+
+
+.tesla-model-img {
+    width: s(980);
+    max-width: s(980);
+}
+
+.tesla-gallery {
+    &__item {
+        transition: .3s;
+        &:hover {
+            filter: brightness(.5);
+        }
+    }
+}
+
+.tesla-tabs {
+    &__tab {
+        border: 1px solid #787878;
+        &.active {
+            border: 1px solid #D20C18;
+        }
+    }
+
+    &__plate {
+        &:not(.active) {
+            display: none;
+        }
+    }
+}
