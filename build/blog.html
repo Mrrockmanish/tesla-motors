@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Описание страницы сайта." />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">  
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Название проекта</title>
+</head>
+<body class="relative">
+<div style="display: none;">
+    <div class="box-modal" id="form-modal">
+        <form class="form-in-modal form bg-dark text-dark2 w-full h-full pt-3 pb-10 px-4 sm:px-6">
+            <div class="box-modal_close arcticmodal-close text-right -mx-4">
+                <svg class="w-10 close-icon  inline-block cursor-pointer" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 32">
+                    <path
+                        d="M7.21875 5.78125L5.78125 7.21875L14.5625 16L5.78125 24.78125L7.21875 26.21875L16 17.4375L24.78125 26.21875L26.21875 24.78125L17.4375 16L26.21875 7.21875L24.78125 5.78125L16 14.5625Z"
+                        fill="#5B5B5B" />
+                </svg>
+            </div>
+            <div class="text-center text-2xl text-white">
+                Для заказа заполните форму
+            </div>
+            <div class="relative mt-6">
+                <input type="text" name="name" class="bg-input-gray placeholder-dark2 bg-white w-full px-4 pt-3 pb-3"
+                    placeholder="Имя">
+            </div>
+            <div class="relative mt-6">
+                <input type="tel" name="tel" class="bg-input-gray placeholder-dark2 bg-white w-full px-4 pt-3 pb-3"
+                    placeholder="Телефон">
+            </div>
+            <div class="relative mt-6">
+                <input type="email" name="email" class="bg-input-gray placeholder-dark2 bg-white w-full px-4 pt-3 pb-3"
+                    placeholder="E-mail">
+            </div>
+            <div class="mt-8 text-center">
+                <button type="submit" class="main-button focus:outline-none text-white">
+                    <span>Оставить заявку</span>
+                </button>
+            </div>
+            <div class="w-56 mx-auto mt-4 text-gray text-center text-xs">
+                Нажимая кнопка «Оставить заявку» вы соглашаетесь с <a href="politic.html"
+                    class="underline hover:text-yellow">политикой конфиденциальности</a>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="mobile-menu hidden w-full h-full bg-white fixed top-0 left-0" style="z-index: 999; background: #ffffff">
+    <div class="w-full h-full flex flex-col">
+        <div class="mobile-menu__close py-4 px-3">
+            <svg class="w-10 md:w-16 ml-auto block hover:opacity-75" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path
+                        d="M7.21875 5.78125L5.78125 7.21875L14.5625 16L5.78125 24.78125L7.21875 26.21875L16 17.4375L24.78125 26.21875L26.21875 24.78125L17.4375 16L26.21875 7.21875L24.78125 5.78125L16 14.5625Z"
+                        fill="#5B5B5B"/>
+            </svg>
+        </div>
+        <div class="overflow-y-scroll flex-grow h-16 px-4">
+            <ul class="flex flex-col items-end pb-4">
+                <li>
+                    <a href="service.html" class="text-2xl font-bold block py-2">
+                        Сервисный центр
+                    </a>
+                </li>
+                <li>
+                    <a href="charge" class="text-2xl font-bold block py-2">
+                        Зарядка
+                    </a>
+                </li>
+                <li>
+                    <a href="tune" class="text-2xl font-bold block py-2">
+                        Тюнинг
+                    </a>
+                </li>
+                <li>
+                    <a href="blog" class="text-2xl font-bold block py-2">
+                        Блог
+                    </a>
+                </li>
+                <li>
+                    <a href="contacts" class="text-2xl font-bold block py-2">
+                        Контакты
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-2xl font-bold block py-2">
+                        Купить запчасти
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<header class="header z-50 fixed top-0 left-0 lg:static w-full text-white bg-35 py-2 lg:py-3">
+    <div class="container">
+        <div class="flex items-center -mx-2">
+            <div class="px-2">
+                <a href="/" class="flex header__logo">
+                    <img src="img/elements/logo.svg" alt="">
+                </a>
+            </div>
+            <nav class="hidden lg:block lg:text-lg xl:text-xl mx-auto px-2">
+                <ul class="flex -mx-2 xl:-mx-4">
+                    <li class="px-2 xl:px-4">
+                        <a href="service.html" class="hover:opacity-80">
+                            Сервисный центр
+                        </a>
+                    </li>
+                    <li class="px-2 xl:px-4">
+                        <a href="charge" class="hover:opacity-80">
+                            Зарядка
+                        </a>
+                    </li>
+                    <li class="px-2 xl:px-4">
+                        <a href="tune" class="hover:opacity-80">
+                            Тюнинг
+                        </a>
+                    </li>
+                    <li class="px-2 xl:px-4">
+                        <a href="blog" class="hover:opacity-80">
+                            Блог
+                        </a>
+                    </li>
+                    <li class="px-2 xl:px-4">
+                        <a href="contacts" class="hover:opacity-80">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="px-2 xl:px-4">
+                        <a href="#" class="hover:opacity-80">
+                            Купить запчасти
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="ml-auto px-2">
+                <a href="tel:[[++tel:tel_phone]]" class="md:text-xl lg:text-lg xl:text-2xl font-bold hover:opacity-80">8 800 000 00 00</a>
+            </div>
+            <div class="bars lg:hidden flex-shrink-0 ml-4">
+                <svg class="w-6 h-6" width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 1.43478C30 0.642374 29.3704 0 28.5937 0H1.40625C0.629601 0 0 0.642374 0 1.43478C0 2.22719 0.629599 2.86957 1.40625 2.86957H28.5937C29.3704 2.86957 30 2.22719 30 1.43478Z" fill="currentColor"/>
+                    <path d="M30 11C30 10.2076 29.3704 9.56522 28.5937 9.56522H1.40625C0.629599 9.56522 0 10.2076 0 11C0 11.7924 0.629601 12.4348 1.40625 12.4348H28.5937C29.3704 12.4348 30 11.7924 30 11Z" fill="currentColor"/>
+                    <path d="M30 20.5652C30 19.7728 29.3704 19.1304 28.5937 19.1304H1.40625C0.629601 19.1304 0 19.7728 0 20.5652C0 21.3576 0.629599 22 1.40625 22H28.5937C29.3704 22 30 21.3576 30 20.5652Z" fill="currentColor"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="overflow-hidden">
+    <div class="container">
+        <ul class="breadcrumb flex flex-wrap text-xs font-light py-3">
+            <li>
+                <a href="#" class="hover:opacity-80">Главная</a>
+            </li>
+            <li>
+                <a href="#" class="hover:opacity-80">Сервис</a>
+            </li>
+        </ul>
+        <h1>
+            Блог
+        </h1>
+        <div style="max-width: 48rem">
+            Мы готовы предоставить Вам полный спектр услуг, чтобы ничто не повлияло на эмоции от владения этим по-настоящему уникальным автомобилем
+        </div>
+        <div class="flex flex-wrap -mx-4 mt-4">
+            <div class="w-full lg:w-1/2 px-4 mt-6">
+                <div class="rounded-xl bg-F2 h-full py-6 pr-4 pl-6">
+                    <div class="text-2xl font-medium">
+                        Заголовок темы
+                    </div>
+                    <div class="mt-2" style="max-width: 36rem;">
+                        Первое о чем должен позаботиться хозяин Теслы, это решить вопрос с организацией зарядного поста в удобном месте
+                    </div>
+                    <div class="flex items-center mt-8">
+                        <div>
+                            <a href="" class="text-base font-medium">
+                                Коментировать
+                            </a>
+                        </div>
+                        <div class="flex ml-auto">
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/watch.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/comment.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4 mt-6">
+                <div class="rounded-xl bg-F2 h-full py-6 pr-4 pl-6">
+                    <div class="text-2xl font-medium">
+                        Заголовок темы
+                    </div>
+                    <div class="mt-2" style="max-width: 36rem;">
+                        Первое о чем должен позаботиться хозяин Теслы, это решить вопрос с организацией зарядного поста в удобном месте
+                    </div>
+                    <div class="flex items-center mt-8">
+                        <div>
+                            <a href="" class="text-base font-medium">
+                                Коментировать
+                            </a>
+                        </div>
+                        <div class="flex ml-auto">
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/watch.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/comment.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4 mt-6">
+                <div class="rounded-xl bg-F2 h-full py-6 pr-4 pl-6">
+                    <div class="text-2xl font-medium">
+                        Заголовок темы
+                    </div>
+                    <div class="mt-2" style="max-width: 36rem;">
+                        Первое о чем должен позаботиться хозяин Теслы, это решить вопрос с организацией зарядного поста в удобном месте
+                    </div>
+                    <div class="flex items-center mt-8">
+                        <div>
+                            <a href="" class="text-base font-medium">
+                                Коментировать
+                            </a>
+                        </div>
+                        <div class="flex ml-auto">
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/watch.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/comment.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4 mt-6">
+                <div class="rounded-xl bg-F2 h-full py-6 pr-4 pl-6">
+                    <div class="text-2xl font-medium">
+                        Заголовок темы
+                    </div>
+                    <div class="mt-2" style="max-width: 36rem;">
+                        Первое о чем должен позаботиться хозяин Теслы, это решить вопрос с организацией зарядного поста в удобном месте
+                    </div>
+                    <div class="flex items-center mt-8">
+                        <div>
+                            <a href="" class="text-base font-medium">
+                                Коментировать
+                            </a>
+                        </div>
+                        <div class="flex ml-auto">
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/watch.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/comment.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4 mt-6">
+                <div class="rounded-xl bg-F2 h-full py-6 pr-4 pl-6">
+                    <div class="text-2xl font-medium">
+                        Заголовок темы
+                    </div>
+                    <div class="mt-2" style="max-width: 36rem;">
+                        Первое о чем должен позаботиться хозяин Теслы, это решить вопрос с организацией зарядного поста в удобном месте
+                    </div>
+                    <div class="flex items-center mt-8">
+                        <div>
+                            <a href="" class="text-base font-medium">
+                                Коментировать
+                            </a>
+                        </div>
+                        <div class="flex ml-auto">
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/watch.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/comment.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4 mt-6">
+                <div class="rounded-xl bg-F2 h-full py-6 pr-4 pl-6">
+                    <div class="text-2xl font-medium">
+                        Заголовок темы
+                    </div>
+                    <div class="mt-2" style="max-width: 36rem;">
+                        Первое о чем должен позаботиться хозяин Теслы, это решить вопрос с организацией зарядного поста в удобном месте
+                    </div>
+                    <div class="flex items-center mt-8">
+                        <div>
+                            <a href="" class="text-base font-medium">
+                                Коментировать
+                            </a>
+                        </div>
+                        <div class="flex ml-auto">
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/watch.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/comment.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4 mt-6">
+                <div class="rounded-xl bg-F2 h-full py-6 pr-4 pl-6">
+                    <div class="text-2xl font-medium">
+                        Заголовок темы
+                    </div>
+                    <div class="mt-2" style="max-width: 36rem;">
+                        Первое о чем должен позаботиться хозяин Теслы, это решить вопрос с организацией зарядного поста в удобном месте
+                    </div>
+                    <div class="flex items-center mt-8">
+                        <div>
+                            <a href="" class="text-base font-medium">
+                                Коментировать
+                            </a>
+                        </div>
+                        <div class="flex ml-auto">
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/watch.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/comment.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4 mt-6">
+                <div class="rounded-xl bg-F2 h-full py-6 pr-4 pl-6">
+                    <div class="text-2xl font-medium">
+                        Заголовок темы
+                    </div>
+                    <div class="mt-2" style="max-width: 36rem;">
+                        Первое о чем должен позаботиться хозяин Теслы, это решить вопрос с организацией зарядного поста в удобном месте
+                    </div>
+                    <div class="flex items-center mt-8">
+                        <div>
+                            <a href="" class="text-base font-medium">
+                                Коментировать
+                            </a>
+                        </div>
+                        <div class="flex ml-auto">
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/watch.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                            <div class="flex mr-4 items-center">
+                                <div class="flex-shrink-0 mr-1">
+                                    <img src="img/elements/comment.svg" alt="">
+                                </div>
+                                <div class="text-9E text-base">
+                                    31
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-12">
+            <div class="block w-full lg-max-17">
+                <div class="font-medium flex items-center justify-center border-radius-30 text-base h-14 w-full cursor-pointer hover:opacity-80" style="border: 1px solid #787878">
+                    <div class="whitespace-nowrap">
+                        Купить запчасти
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer bg-35 py-8 text-white text-base leading-relaxed font-light mt-20 lg:mt-32">
+    <div class="container">
+        <div class="flex flex-wrap -mx-2">
+            <div class="w-full sm:w-1/2 lg:w-3/12 xl:w-3/12 px-2">
+                <img src="img/elements/logo.svg" alt="">
+                <div class="mt-3">
+                    <a href="#" class="hover:opacity-80 block mt-5">
+                        Юридическая информация
+                    </a>
+                </div>
+            </div>
+            <div class="w-full hidden xl:block sm:w-1/2 lg:w-1/4 xl:w-2/12 px-2">
+                <div class="font-medium">
+                    Навигация
+                </div>
+                <ul class="flex flex-col mt-2">
+                    <li class="mt-2">
+                        <a href="#" class="hover:opacity-80">
+                            Сервисный центр
+                        </a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#" class="hover:opacity-80">
+                            Зарядка
+                        </a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#" class="hover:opacity-80">
+                            Тюнинг
+                        </a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#" class="hover:opacity-80">
+                            Блог
+                        </a>
+                    </li>
+                    <li class="mt-2">
+                        <a href="#" class="hover:opacity-80">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full sm:text-right lg:text-left sm:w-1/2 lg:w-2/12 xl:w-2/12 px-2 mt-6 sm:mt-0">
+                <div class="font-medium">
+                    Контакты
+                </div>
+                <div class="mt-4">
+                    Тел:
+                </div>
+                <div>
+                    <a href="tel:" class="hover:opacity-80">+7 999 999 99 99 </a>
+                </div>
+                <div>
+                    <a href="tel:" class="hover:opacity-80">+7 999 999 99 99 </a>
+                </div>
+                <div class="mt-2">
+                    E-mail:
+                </div>
+                <div>
+                    <a href="mailto:info@mail.com" class="hover:opacity-80">
+                        info@mail.com
+                    </a>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-2/12 xl:w-2/12 px-2 mt-6 lg:mt-0">
+                <div class="font-medium">
+                    Социальные сети
+                </div>
+                <div>
+                    <a href="#" class="flex items-center mt-4 hover:opacity-80">
+                        <div class="flex-shrink-0 flex justify-center w-5 mr-4">
+                            <img src="img/elements/vk.svg" alt="">
+                        </div>
+                        <div>
+                            /teslamotorgarage
+                        </div>
+                    </a>
+                    <a href="#" class="flex items-center mt-4 hover:opacity-80">
+                        <div class="flex-shrink-0 flex justify-center w-5 mr-4">
+                            <img src="img/elements/instagram.svg" alt="">
+                        </div>
+                        <div>
+                            @teslamotorgarage
+                        </div>
+                    </a>
+                    <a href="#" class="flex items-center mt-4 hover:opacity-80">
+                        <div class="flex-shrink-0 flex justify-center w-5 mr-4">
+                            <img src="img/elements/facebook.svg" alt="">
+                        </div>
+                        <div>
+                            @teslamotorgarage
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-5/12 xl:w-3/12 px-2 flex flex-col sm:text-right sm:items-end mt-6 lg:mt-0">
+                <div class="font-medium">
+                    Правовая информация
+                </div>
+                <div class="my-4">
+                    <a href="#" class="hover:opacity-80">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+                <div class="mt-auto">
+                    <a href="#">Дизайин и разработака Live Design</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/libs.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
