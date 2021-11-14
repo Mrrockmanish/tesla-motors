@@ -326,3 +326,25 @@ h3 {
         }
     }
 }
+
+.pagination {
+    li {
+        a {
+            width: s(32);
+            height: s(30);
+            flex-shrink: 0;
+            transition: .3s;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+
+    li.active a {
+        background-color: #D20C18;
+        color: white;
+        border-radius: s(4);
+        pointer-events: none;
+    }
+}
